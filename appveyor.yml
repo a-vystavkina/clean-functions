@@ -1,5 +1,17 @@
-version: 1.0.{build}
-environment:
-  GITHUB_TOKEN: e77b0cc04c3557d2b3450ad9d3943c09d1264c76
-build:
-  verbosity: minimal
+image: Visual Studio 2015
+
+stack: node 10
+
+branches:
+  only:
+    - master 
+
+cache: node_modules
+
+install:
+  - npm install
+
+build: off
+
+test_script:
+  - npm run lint && npm test 
