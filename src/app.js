@@ -1,5 +1,7 @@
 export default function colorHealth(element) {
+
   let statusHealth = '';
+  
   switch (true) {
     case element.health < 15:
       statusHealth = 'critical';
