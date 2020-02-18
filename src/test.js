@@ -1,4 +1,4 @@
-import colorHealth from './app.js';
+import colorHealth from './app';
 
 test('Здоровья более 50', () => {
   const userObj = { name: 'Маг', health: 90 };
